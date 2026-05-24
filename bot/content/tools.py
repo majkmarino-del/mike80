@@ -78,6 +78,31 @@ TOOLS: Dict[str, List[Tool]] = {
             pricing="Бесплатно с лимитами",
             url="https://hailuoai.video/",
         ),
+        Tool(
+            id="seedance",
+            name="Seedance (ByteDance)",
+            category="t2v",
+            description=(
+                "Модель ByteDance Seed: text-to-video и image-to-video, "
+                "топ лидербордов по prompt following и motion. Версия 2.0 "
+                "умеет нативно синхронизировать аудио. Доступ через Dreamina "
+                "(бесплатно), Jimeng (Китай) или API на fal.ai/Replicate."
+            ),
+            pricing="Бесплатно через Dreamina; ~$0.62 за 5 сек 1080p на fal.ai",
+            url="https://dreamina.capcut.com/",
+        ),
+        Tool(
+            id="grok",
+            name="Grok Imagine (xAI)",
+            category="t2v",
+            description=(
+                "Генератор xAI: text-to-image, image-to-video, video-to-video. "
+                "Клипы 1–15 сек, 480p/720p, нативный звук — речь, lip-sync, "
+                "SFX, музыка. Доступен в приложении X и Grok."
+            ),
+            pricing="X Premium+ $40/мес или SuperGrok $30/мес; API ~$0.05/сек",
+            url="https://x.ai/grok",
+        ),
     ],
     "i2v": [
         Tool(
